@@ -49,6 +49,11 @@ body {
   text-align: center;
 }
 
+.number-container span {
+  font-size: 20px;
+  color: #8e44ad;
+}
+
 .number-container input::placeholder {
   font-size: 20px;
   color: #8e44ad;
