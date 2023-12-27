@@ -1,6 +1,6 @@
 const forms = document.getElementById("loginForm");
-const username = document.getElementById("username").value;
-const password = document.getElementById("password").value;
+const username = document.getElementById("username");
+const password = document.getElementById("password");
 
 const users = [
   {
@@ -12,11 +12,9 @@ const users = [
 forms.addEventListener("submit", function (event) {
   event.preventDefault(); // 폼 제출 이벤트 방지
 
-  console.log("안녕하세요");
-
   //JSON 데이터와 입력된 아이디, 비밀번호 비교하기
   const user = users.find(function (user) {
-    return user.username === username && user.password === password;
+    return user.username === username.value && user.password === password.value;
   });
 
   if (user) {
