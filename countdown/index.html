@@ -11,11 +11,23 @@
       <div id="disp">Timer</div>
 
       <div class="number-container">
-        <input type="number" id="hour" placeholder="시" value="" />
+        <input type="text" id="hour" placeholder="시" value="" maxlength="2" />
         <span>:</span>
-        <input type="number" id="minute" placeholder="분" value="" />
+        <input
+          type="text"
+          id="minute"
+          placeholder="분"
+          value=""
+          maxlength="2"
+        />
         <span>:</span>
-        <input type="number" id="second" placeholder="초" value="" />
+        <input
+          type="text"
+          id="second"
+          placeholder="초"
+          value=""
+          maxlength="2"
+        />
       </div>
 
       <div class="btn">
@@ -24,6 +36,6 @@
         <button id="reset_btn">RESET</button>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
   </body>
 </html>
